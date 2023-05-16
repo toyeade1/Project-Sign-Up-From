@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script/script.js" defer></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Form Sign-On</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="left-div">
+                
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="form-header">
+                <h2>This is not a real online service! This is an odin project assesment to practice my understanding of HTML forms
+                <h2>Do not enter real information :)</h2>
+            </div>
+            <div class="form-body">
+                <h3>Please fill out the following information.</h3>
+                <form action="" method="get" class="speaker-form">
+                    <div class="form-row">
+                        <div class="form-info"><label for="first-name">First Name</label><input type="text" name="first-name" id="first-name" minlength="1" maxlength="15" pattern="[a-zA-Z]{1,15}" required></div>
+                        <div class="form-info"><label for="last-name">Last Name</label><input type="text" name="last-name" id="last-name" minlength="1" maxlength="20" pattern="[a-zA-Z]{1,20}" required></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-info"><label for="email">Email</label><input type="email" name="email" id="email" placeholder="joe@example.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$" required></div>
+                        <div class="form-info"><label for="phone">Phone Number</label><input type="tel" name="phone" id="phone" pattern="^\d{10}$" required></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-info"><label for="password">Password</label><input type="password" name="password" id="password" required></div>
+                        <div class="form-info"><label for="confirm-password">Confirm Password</label><input type="password" name="confirm-password" id="confirm-password" required><p class="pwdMismatch"></p></div>
+                    </div>
+                    <div class="form-row">
+                        <button class="button-65" role="button" disabled>Create Account</button>
+                    </div>
+                </form>
+            </div>
+            <div class="submit-section">
+                <p class="returning-user">Already have an account?<span class="log-link">  Log in</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+    
